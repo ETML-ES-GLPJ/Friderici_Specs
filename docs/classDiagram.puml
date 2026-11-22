@@ -1,0 +1,14 @@
+@startuml
+class PersonTest {
+    + shouldInitializePerson() : void
+}
+
+class Person {
+    + Person(firstname : String, lastname : String, dateOfBirth : LocalDate)
+    + getFirstname() : String
+    + getLastname() : String
+    + getAge() : int
+}
+
+PersonTest ..> Person : <<uses>>
+@enduml
